@@ -9,10 +9,14 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/1119 guitar.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/1119 guitar.json",
+        { onProgress: UnityProgress }
+      );
     </script>
   </head>
-  <body>
+  <body style="background-color: black">
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
